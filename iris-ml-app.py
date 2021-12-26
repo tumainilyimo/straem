@@ -7,9 +7,7 @@ import numpy as np
 from sklearn.ensemble import RandomForestClassifier
 #app heading
 st.write("""
-# An Ensemble ML Based
-model for predicting predisposition to diabetic Condition
-This app predicts the ***Diabetic Condition***!
+# An Ensemble Machine Learning Based model for predicting predisposition to diabetic Condition
 """)
 #creating sidebar for user input features
 st.sidebar.header('User Input Parameters')
