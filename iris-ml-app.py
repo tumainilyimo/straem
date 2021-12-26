@@ -10,7 +10,7 @@ st.write("""
 # An Ensemble Machine Learning Based model for predicting predisposition to diabetic Condition
 """)
 st.write("""
- # Peter B. Kaaya
+ *Peter B. Kaaya*
 """)
 #creating sidebar for user input features
 st.sidebar.header('User Input Parameters')
