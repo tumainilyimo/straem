@@ -24,7 +24,7 @@ def user_input_features():
         mass=st.sidebar.slider('mass', 8.4,14.9, 10.4)
         pedi=st.sidebar.slider('pedi', 0.33,2.0,0.65 )
         age=st.sidebar.slider('age', 0.33,2.0,0.65 )
-        data = {'preg': preg,
+        data = {'preg': Pregnancies,
                 'plas': plas,
                 'pres': pres,
                 'skin': skin,
@@ -40,7 +40,7 @@ st.subheader('User Input parameters')
 st.write(df)
 #reading csv file
 data=pd.read_csv("./fulltrainset.csv")
-X =np.array(data[['Pregnancies', 'plas' , 'pres' , 'skin' , 'insulin' , 'mass' , 'pedi']])
+X =np.array(data[['preg', 'plas' , 'pres' , 'skin' , 'insulin' , 'mass' , 'pedi']])
 Y = np.array(data['result'])
 #random forest model
 rfc= RandomForestClassifier()
