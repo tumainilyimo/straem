@@ -4,7 +4,7 @@ import pandas as pd
 import seaborn as sns
 from sklearn import datasets
 from sklearn import manifold 
-%matplotlib inline
+
 
 import streamlit as st
 import pandas as pd
