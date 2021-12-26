@@ -1,38 +1,10 @@
-#pip install streamlit
-
-import gc
-import os
-import re
-import time
-import math
-import joblib
-import hyperopt
-import pandas as pd 
+import matplotlib.pyplot as plt
 import numpy as np
-
-import scipy.stats as st
-from plotly import tools
+import pandas as pd
 import seaborn as sns
-from sklearn.utils import resample
-from datetime import datetime 
-import matplotlib.pyplot as plt 
-import plotly.figure_factory as ff
-from warnings import simplefilter
-from sklearn.impute import SimpleImputer
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.pipeline import ( FeatureUnion, Pipeline )
-from scipy.stats import ( beta, expon, randint, uniform)
-from sklearn.base import (TransformerMixin, BaseEstimator)
-from plotly.offline import ( download_plotlyjs, init_notebook_mode, plot, iplot )
-init_notebook_mode(connected=True)
-from sklearn.linear_model import LogisticRegression
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.metrics import ( roc_curve, auc, accuracy_score, roc_auc_score,log_loss,confusion_matrix,classification_report)
-from sklearn.ensemble import ( RandomForestClassifier, GradientBoostingClassifier, AdaBoostClassifier)
-from sklearn.preprocessing import ( LabelEncoder, StandardScaler )
-from sklearn.model_selection import ( GridSearchCV, StratifiedKFold, train_test_split, cross_val_score, RandomizedSearchCV, KFold )
-# ignore all future warnings
-simplefilter(action='ignore', category=FutureWarning)
+from sklearn import datasets
+from sklearn import manifold 
+%matplotlib inline
 
 import streamlit as st
 import pandas as pd
