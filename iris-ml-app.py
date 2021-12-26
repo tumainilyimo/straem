@@ -24,7 +24,7 @@ def user_input_features():
         mass=st.sidebar.slider('mass', 8.4,14.9, 10.4)
         pedi=st.sidebar.slider('pedi', 0.33,2.0,0.65 )
         age=st.sidebar.slider('age', 0.33,2.0,0.65 )
-        data = {'preg': Pregnancies,
+        data = {'preg': preg,
                 'plas': plas,
                 'pres': pres,
                 'skin': skin,
