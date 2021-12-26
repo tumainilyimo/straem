@@ -8,8 +8,7 @@ from sklearn.ensemble import RandomForestClassifier
 #app heading
 st.write("""
 # An Ensemble ML Based
-model for predicting predisposition to
-diabetic Condition
+model for predicting predisposition to diabetic Condition
 This app predicts the ***Diabetic Condition***!
 """)
 #creating sidebar for user input features
