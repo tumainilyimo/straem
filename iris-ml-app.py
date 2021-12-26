@@ -17,13 +17,13 @@ st.sidebar.header('User Input Parameters')
   
 def user_input_features():
         preg = st.sidebar.slider('Pregnancies', 0, 10, 20)
-        plas = st.sidebar.slider('plas', 0,100 , 200)
-        pres = st.sidebar.slider('pres', 0.0,1.0 , 0.5)
-        skin = st.sidebar.slider('skin', 0.01,0.6 , 0.08)
-        insulin=st.sidebar.slider('insulin', 6.0,289.0 , 46.0)
-        mass=st.sidebar.slider('mass', 8.4,14.9, 10.4)
-        pedi=st.sidebar.slider('pedi', 0.33,2.0,0.65 )
-        age=st.sidebar.slider('age', 0.33,2.0,0.65 )
+        plas = st.sidebar.slider('Glucose', 0,100 , 200)
+        pres = st.sidebar.slider('BloodPressure', 0.0,55.0 , 110.0)
+        skin = st.sidebar.slider('skin', 0.0,35.0 , 70.0)
+        insulin=st.sidebar.slider('insulin', 0.0,450.0 , 900.0)
+        mass=st.sidebar.slider('mass', 0.0,30.5, 61.5)
+        pedi=st.sidebar.slider('pedi', 0.0,1.55,3.55 )
+        age=st.sidebar.slider('age', 0,60,120 )
         data = {'preg': preg,
                 'plas': plas,
                 'pres': pres,
