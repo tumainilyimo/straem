@@ -1,6 +1,6 @@
 #preg	plas	pres	skin	insulin	mass	pedi	age	result
 #import libraries
-sudo install scikit-learn
+conda install scikit-learn
 import streamlit as st
 import pandas as pd
 import numpy as np
