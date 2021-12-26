@@ -40,7 +40,7 @@ st.subheader('User Input parameters')
 st.write(df)
 #reading csv file
 data=pd.read_csv("./fulltrainset.csv")
-X =np.array(data[['preg', 'plas' , 'pres' , 'skin' , 'insulin' , 'mass' , 'pedi']])
+X =np.array(data[['Pregnancies', 'plas' , 'pres' , 'skin' , 'insulin' , 'mass' , 'pedi']])
 Y = np.array(data['result'])
 #random forest model
 rfc= RandomForestClassifier()
