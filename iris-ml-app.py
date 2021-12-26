@@ -16,7 +16,7 @@ st.write("""
 st.sidebar.header('User Input Parameters')
   
 def user_input_features():
-        preg = st.sidebar.slider('preg', 4.7, 15.9, 8.31)
+        preg = st.sidebar.slider('Pregnancies', 4.7, 15.9, 8.31)
         plas = st.sidebar.slider('plas', 0.12,1.58 , 0.52)
         pres = st.sidebar.slider('pres', 0.0,1.0 , 0.5)
         skin = st.sidebar.slider('skin', 0.01,0.6 , 0.08)
