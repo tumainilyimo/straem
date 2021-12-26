@@ -7,7 +7,7 @@ import numpy as np
 from sklearn.ensemble import RandomForestClassifier
 #app heading
 st.write("""
-# An Ensemble Machine Learning Based
+# An Ensemble ML Based
 model for predicting predisposition to
 diabetic Condition
 This app predicts the ***Diabetic Condition***!
