@@ -7,8 +7,10 @@ import numpy as np
 from sklearn.ensemble import RandomForestClassifier
 #app heading
 st.write("""
-# Wine Quality Prediction App
-This app predicts the ***Wine Quality*** type!
+# An Ensemble Machine Learning Based
+model for predicting predisposition to
+diabetic Condition
+This app predicts the ***Diabetic Condition***!
 """)
 #creating sidebar for user input features
 st.sidebar.header('User Input Parameters')
@@ -43,9 +45,9 @@ Y = np.array(data['result'])
 #random forest model
 rfc= RandomForestClassifier()
 rfc.fit(X, Y)
-st.subheader('Wine quality labels and their corresponding index number')
+st.subheader('Diabetic Condition their corresponding result, 1 "POSITIVE", 0 "NEGATIVE"')
 st.write(pd.DataFrame({
-   'wine quality': [3, 4, 5, 6, 7, 8, 9 ]}))
+   'Result': [0,1]}))
 
 prediction = rfc.predict(df)
 prediction_proba = rfc.predict_proba(df)
